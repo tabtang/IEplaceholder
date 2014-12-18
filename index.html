@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IE placeholder</title>
+<style type="text/css">
+body, div, form, textarea, label, input, ul, ol, li, dl, dt, dd, em, p, span, a, img, h1, h2, h3, h4, h5, h6, tbody, tfoot, tr, th, td, pre, code, form, fieldset, legend, font { margin:0; padding:0; }
+body { font-size:12px;}
+input { width:200px; height:18px; line-height:18px; padding:4px 2px; border:#ccc solid 1px;}
+</style>
+</head>
+
+<body>
+	
+    <div style="padding:30px;">
+    
+        <p style="margin:30px;"><input type="text" id="testinput" placeholder="请输入姓名" /></p>
+    
+    </div>
+    
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="IEplaceholder.js"></script>
+	<script type="text/javascript">
+    $('#testinput').IEplaceholder();
+    </script>
+</body>
+</html>
