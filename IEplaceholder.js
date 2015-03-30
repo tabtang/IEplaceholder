@@ -31,7 +31,7 @@
 					'padding': 0,
 					'width': input.outerWidth(true) - _w,
 					'height': input.outerHeight(true),
-					'line-height': input.outerHeight(true) + 'px',
+					'line-height': input[0].tagName == 'TEXTAREA' ? Number(input.css('line-height').replace('px','')) + Number(input.css('padding-top').replace('px',''))*2 + 'px' : input.outerHeight(true) + 'px',
 					'text-indent': _w
 				});
 				label.on('click.placeholder', function(){
